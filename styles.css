@@ -164,3 +164,45 @@ h1, h2 {
 @media (max-width: 768px) {
     /* Add responsive styles here */
 }
+
+/* Add these new animation styles to the end of your existing styles.css file */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+/* Add smooth transitions */
+.template-card, .btn, nav ul li a {
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
