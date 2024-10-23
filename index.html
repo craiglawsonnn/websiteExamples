@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">Simple Portfolio</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#templates">Templates</a></li>
@@ -20,15 +22,40 @@
     <main>
         <section id="home">
             <h1>Choose Your Website Template</h1>
-            <!-- Add content here -->
+            <p>Discover the perfect template for your online presence</p>
         </section>
 
         <section id="templates">
-            <!-- Template previews will go here -->
+            <div class="template-grid">
+                <div class="template-card">
+                    <img src="images/template1-preview.jpg" alt="Template 1 Preview">
+                    <h2>Minimalist Portfolio</h2>
+                    <p>A clean and simple design for showcasing your work.</p>
+                    <a href="templates/template1.html" class="btn">Preview</a>
+                </div>
+                <div class="template-card">
+                    <img src="images/template2-preview.jpg" alt="Template 2 Preview">
+                    <h2>Creative Blog</h2>
+                    <p>An engaging layout for sharing your thoughts and ideas.</p>
+                    <a href="templates/template2.html" class="btn">Preview</a>
+                </div>
+                <div class="template-card">
+                    <img src="images/template3-preview.jpg" alt="Template 3 Preview">
+                    <h2>Business Professional</h2>
+                    <p>A sleek design for your company or personal brand.</p>
+                    <a href="templates/template3.html" class="btn">Preview</a>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <!-- Contact form will go here -->
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </section>
     </main>
 
