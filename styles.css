@@ -8,14 +8,14 @@
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #ffffff;
+    background-color: #1a1a1a;
 }
 
 /* Header styles */
 header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #222222;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     position: fixed;
     width: 100%;
     top: 0;
@@ -44,13 +44,12 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #00ffa3;
 }
 
 /* Main content styles */
@@ -62,9 +61,8 @@ section {
     margin-bottom: 4rem;
 }
 
-h1, h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+h1, h2, h3 {
+    color: #00ffa3;
 }
 
 /* Template grid styles */
@@ -75,15 +73,16 @@ h1, h2 {
 }
 
 .template-card {
-    background-color: #fff;
+    background-color: #222222;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     transition: transform 0.3s ease;
 }
 
 .template-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 }
 
 .template-card img {
@@ -95,28 +94,30 @@ h1, h2 {
 .template-card h2 {
     font-size: 1.2rem;
     margin: 1rem;
+    color: #00ffa3;
 }
 
 .template-card p {
     font-size: 0.9rem;
     margin: 0 1rem 1rem;
-    color: #666;
+    color: #cccccc;
 }
 
 /* Button styles */
 .btn {
     display: inline-block;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #00ffa3;
+    color: #1a1a1a;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0 1rem 1rem;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #ffffff;
+    color: #1a1a1a;
 }
 
 /* Template preview styles */
@@ -258,6 +259,12 @@ nav ul li a:hover {
     height: 150px;
 }
 
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #00ffa3;
+    outline: none;
+}
+
 /* Add styles for the example website container */
 .example-container {
     margin-top: 2rem;
@@ -270,4 +277,9 @@ nav ul li a:hover {
     width: 100%;
     height: 600px;
     border: none;
+}
+
+footer {
+    background-color: #222222;
+    color: #cccccc;
 }
