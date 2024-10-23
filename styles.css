@@ -111,13 +111,12 @@ h1, h2, h3 {
     padding: 0.5rem 1rem;
     border-radius: 4px;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease;
     margin: 0 1rem 1rem;
 }
 
 .btn:hover {
-    background-color: #ffffff;
-    color: #1a1a1a;
+    background-color: #00cc82;
 }
 
 /* Template preview styles */
@@ -135,11 +134,16 @@ h1, h2, h3 {
 }
 
 .template-features {
-    background-color: #fff;
+    background-color: #ffffff;
+    color: #333333;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
+}
+
+.template-features h2 {
+    color: #1a1a1a;
 }
 
 .template-features ul {
@@ -150,11 +154,12 @@ h1, h2, h3 {
 .template-features ul li {
     margin-bottom: 0.5rem;
     position: relative;
+    color: #333333;
 }
 
 .template-features ul li::before {
     content: "•";
-    color: #007bff;
+    color: #00ffa3;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -282,4 +287,29 @@ nav ul li a:hover {
 footer {
     background-color: #222222;
     color: #cccccc;
+}
+
+/* Update the main heading color */
+h1 {
+    color: #00ffa3;
+}
+
+/* Update the template features text color */
+.template-features {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.template-features h2 {
+    color: #1a1a1a;
+}
+
+/* Ensure the preview button color is consistent */
+.btn {
+    background-color: #00ffa3;
+    color: #1a1a1a;
+}
+
+.btn:hover {
+    background-color: #00cc82;
 }
