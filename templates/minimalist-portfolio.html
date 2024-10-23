@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan - Minimalist Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://cdn.pixabay.com/photo/2018/12/10/10/21/desktop-3866459_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .portfolio {
+            padding: 4rem 0;
+        }
+        .portfolio h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .about {
+            background-color: #f4f4f4;
+            padding: 4rem 0;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .about-image img {
+            width: 300px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .contact {
+            padding: 4rem 0;
+        }
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1>Alex Morgan</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Minimalist Design, Maximum Impact</h1>
+            <p>Welcome to my portfolio</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg" alt="Project 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://cdn.pixabay.com/photo/2017/07/03/20/17/abstract-2468874_1280.jpg" alt="Project 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://cdn.pixabay.com/photo/2018/03/10/09/45/businessman-3213659_1280.jpg" alt="Project 3">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822_1280.jpg" alt="Project 4">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://cdn.pixabay.com/photo/2018/01/26/18/21/desktop-3109069_1280.jpg" alt="Project 5">
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/workspace-1280538_1280.jpg" alt="Project 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://cdn.pixabay.com/photo/2019/11/10/11/13/couple-4615557_1280.jpg" alt="Alex Morgan">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm Alex Morgan, a minimalist designer with a passion for creating clean, functional, and impactful designs. With over 5 years of experience in the industry, I've worked with clients from various sectors to bring their visions to life.</p>
+                    <p>My approach focuses on simplicity and user-centric design, ensuring that every project I undertake not only looks great but also delivers results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
